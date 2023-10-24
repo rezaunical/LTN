@@ -76,14 +76,19 @@ formula_aggregator = ltn.Wrapper_Formula_Aggregator(ltn.fuzzy_ops.Aggreg_pMeanEr
 
 @tf.function
 def axioms(data, labels):
-    x_A = ltn.Variable("x_A",data[labels])
-    x_not_A = ltn.Variable("x_not_A",data[tf.logical_not(labels)])
+    data = tf.convert_to_tensor(data)
+    labels = tf.convert_to_tensor(labels, dtype=tf.bool)
+    
+    x_A = ltn.Variable("x_A", tf.boolean_mask(data, labels))
+    x_not_A = ltn.Variable("x_not_A", tf.boolean_mask(data, tf.math.logical_not(labels)))
+    
     axioms = [
         Forall(x_A, A(x_A)),
         Forall(x_not_A, Not(A(x_not_A)))
     ]
     sat_level = formula_aggregator(axioms).tensor
     return sat_level
+
 
 
 # Initialize all layers and the static graph.
