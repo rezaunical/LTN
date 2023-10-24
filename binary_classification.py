@@ -101,6 +101,23 @@ def test_step(data, labels):
     predictions = A.model(data)
     metrics_dict['test_accuracy'](labels,predictions)
 
+
+# The classification with MLP (same size network) (without LTN Rules)
+model = tf.keras.models.Sequential([
+    tf.keras.layers.Input(shape=(2,)),
+    tf.keras.layers.Dense(16, activation='relu'),
+    tf.keras.layers.Dense(16, activation='relu'),
+    tf.keras.layers.Dense(1, activation='sigmoid')
+])
+
+# Compile the model with binary cross-entropy loss for binary classification
+model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+# Train the model
+history = model.fit(ds_train, epochs=EPOCHS, validation_data=ds_test)
+
+
 import commons
 
 commons.train(
