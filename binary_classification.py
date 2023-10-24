@@ -29,6 +29,21 @@ labels = np.sum(np.square(data-[.5,.5]),axis=1)<.09
 ds_train = tf.data.Dataset.from_tensor_slices((data[:50],labels[:50])).batch(batch_size)
 ds_test = tf.data.Dataset.from_tensor_slices((data[50:],labels[50:])).batch(batch_size)
 
+# Extracting the data points based on labels
+data_positive = data[labels]
+data_negative = data[~labels]
+
+# Plotting
+plt.figure(figsize=(4, 4))
+plt.scatter(data_positive[:, 0], data_positive[:, 1], c='blue', label='Positive (close to center)')
+plt.scatter(data_negative[:, 0], data_negative[:, 1], c='red', label='Negative')
+plt.title('Data Visualization')
+plt.xlabel('x1')
+plt.ylabel('x2')
+plt.legend()
+plt.grid(True)
+plt.show()
+
 # # LTN
 
 A = ltn.Predicate.MLP([2],hidden_layer_sizes=(16,16))
