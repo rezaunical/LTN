@@ -75,7 +75,7 @@ Epoch 1/1000-   loss: 0.7040 - accuracy: 0.4200 - val_loss: 0.6877 - val_accurac
 ... \
 Epoch 452/1000- loss: 0.0971 - accuracy: 0.9800 - val_loss: 0.3894 - val_accuracy: 0.780 \
 ... \
-Epoch 910/1000- loss: 0.0266 - accuracy: 1.0000 - val_loss: 0.2111 - val_accuracy: 0.90 \
+Epoch 910/1000- loss: 0.0266 - accuracy: 1.0000 - val_loss: 0.2111 - val_accuracy: 0.90 
 
 
 ## 3- [binary_iris.py] 
