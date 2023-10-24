@@ -15,7 +15,7 @@ If you use Jupyter in your system: \
 1- !git clone https://github.com/rezaunical/LTN.git \
 2- cd LTN # name of the directory in your system \
 3- !pip install ltn # [install the LTN library] \
-4- run binary_classification.py # or any other files inside the repository. \
+4- run binary_classification.py # or any other files inside the repository. 
 
 
 # The results
