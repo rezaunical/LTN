@@ -56,7 +56,7 @@ plt.show()
 
 # # LTN
 
-A = ltn.Predicate.MLP([2],hidden_layer_sizes=(16,16))
+A = ltn.Predicate.MLP([4],hidden_layer_sizes=(16,16)) #inside the [?], currently 4, is the number of the features.
 
 # # Axioms
 # 
