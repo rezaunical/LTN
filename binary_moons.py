@@ -22,7 +22,7 @@ csv_path = args['csv_path']
 # Generate the make_moons dataset
 nr_samples = 100
 data, labels = make_moons(n_samples=nr_samples, noise=0.1)
-labels = labels.astype(np.bool)  # Convert to boolean for consistency with the original code
+labels = labels.astype(bool)  # Convert to boolean for consistency with the original code
 
 # Split into training and testing datasets
 ds_train = tf.data.Dataset.from_tensor_slices((data[:50], labels[:50])).batch(batch_size)
