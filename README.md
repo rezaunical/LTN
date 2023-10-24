@@ -49,7 +49,7 @@ Epoch 356/1000-  loss: 0.4877 - accuracy: 0.7000 - val_loss: 0.4347 - val_accura
 ... \
 Epoch 470/1000-  loss: 0.3809 - accuracy: 0.9000 - val_loss: 0.3521 - val_accuracy: 0.8400 \
 ... \
-Epoch 738/1000- loss: 0.1667 - accuracy: 1.0000 - val_loss: 0.2012 - val_accuracy: 0.9400 \
+Epoch 738/1000- loss: 0.1667 - accuracy: 1.0000 - val_loss: 0.2012 - val_accuracy: 0.9400 
 
 ## 2- [binary_moons.py] 
 ![moons](https://github.com/rezaunical/LTN/assets/137186931/0b960006-d944-4789-8321-970a7627bbff)
@@ -68,7 +68,7 @@ Epoch 180, train_sat: 0.7778, test_sat: 0.6388, train_accuracy: 0.9400, test_acc
 ... \
 Epoch 780, train_sat: 0.8227, test_sat: 0.6407, train_accuracy: 0.9800, test_accuracy: 0.8200 
 
-### The selected ones for Non-LTN MLP \
+### The selected ones for Non-LTN MLP 
 
 Epoch 1/1000-   loss: 0.7040 - accuracy: 0.4200 - val_loss: 0.6877 - val_accuracy: 0.5800 \
 ... \
@@ -77,14 +77,14 @@ Epoch 452/1000- loss: 0.0971 - accuracy: 0.9800 - val_loss: 0.3894 - val_accurac
 Epoch 910/1000- loss: 0.0266 - accuracy: 1.0000 - val_loss: 0.2111 - val_accuracy: 0.90 \
 
 
-## 3- [binary_iris.py] \
+## 3- [binary_iris.py] 
 ![iris](https://github.com/rezaunical/LTN/assets/137186931/972b86b4-9831-4d87-9464-41db49777c9d)
 
 ###The selected ones for LTN:  
 Epoch 0, train_sat: 0.4621, test_sat: 0.4707, train_accuracy: 0.2200, test_accuracy: 0.2400 \
 Epoch 20, train_sat: 0.5262, test_sat: 0.5351, train_accuracy: 0.8000, test_accuracy: 0.6600 \
 Epoch 40, train_sat: 0.6079, test_sat: 0.6216, train_accuracy: 0.9800, test_accuracy: 1.0000 \
-Epoch 60, train_sat: 0.6952, test_sat: 0.7108, train_accuracy: 1.0000, test_accuracy: 1.0000 \
+Epoch 60, train_sat: 0.6952, test_sat: 0.7108, train_accuracy: 1.0000, test_accuracy: 1.0000 
 
 ### The selected ones for Non-LTN MLP 
 Epoch 1/1000-  loss: 1.0407 - accuracy: 0.4000 - val_loss: 0.7410 - val_accuracy: 0.6000 \
