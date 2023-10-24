@@ -8,7 +8,7 @@ The files are: \
 1- binary_classification.py # uses the same dataset of the original problem in the LTN paper. \
 2- binary_moons.py # uses the moons dataset \
 3- binary_iris.py # uses the iris dataset \
-4- binary_synthetic # uses a synthetic dataset with 50 features \
+4- binary_synthetic # uses a synthetic dataset with 50 features 
 
 # How to use  
 If you use Jupyter in your system: \
